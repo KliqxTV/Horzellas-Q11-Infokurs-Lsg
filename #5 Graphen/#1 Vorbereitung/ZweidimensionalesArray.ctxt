@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ZweidimensionalesArray
+comment1.params=
+comment1.target=ZweidimensionalesArray()
+comment2.params=
+comment2.target=void\ alleMieterAusgeben()
+comment3.params=j
+comment3.target=void\ alleMieterEinesGebaeudes(int)
+comment4.params=suchName
+comment4.target=void\ sucheMieter(java.lang.String)
+comment5.params=neu\ stock\ geb
+comment5.target=void\ mieterWechsel(java.lang.String,\ int,\ int)
+comment6.params=
+comment6.target=void\ gesamtmieteAusgeben()
+comment7.params=j
+comment7.target=void\ gesamtmieteEinesGebaeudes(int)
+comment8.params=
+comment8.target=void\ maxMiete()
+numComments=9

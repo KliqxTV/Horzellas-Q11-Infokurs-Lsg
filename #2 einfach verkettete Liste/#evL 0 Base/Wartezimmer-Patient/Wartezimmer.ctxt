@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Wartezimmer
+comment1.params=
+comment1.target=Wartezimmer()
+comment10.params=loeschName
+comment10.target=void\ loeschenKompliziert(java.lang.String)
+comment2.params=
+comment2.target=void\ alleAusgeben()
+comment3.params=
+comment3.target=void\ anzahl()
+comment4.params=
+comment4.target=void\ anzahlPrivatversicherte()
+comment5.params=suchName
+comment5.target=void\ gibtsDen(java.lang.String)
+comment6.params=
+comment6.target=Patient\ getFirst()
+comment7.params=
+comment7.target=Patient\ getLast()
+comment8.params=uename\ uekraka\ uealter
+comment8.target=void\ hintenanfuegen(java.lang.String,\ java.lang.String,\ int)
+comment9.params=name
+comment9.target=Patient\ getObjectFromName(java.lang.String)
+numComments=11

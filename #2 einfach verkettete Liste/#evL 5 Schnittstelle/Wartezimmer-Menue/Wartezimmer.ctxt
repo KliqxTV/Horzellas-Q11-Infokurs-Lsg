@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Wartezimmer
+comment1.params=
+comment1.target=Wartezimmer()
+comment2.params=
+comment2.target=void\ menu()
+comment3.params=
+comment3.target=void\ patientEinfuegen()
+comment4.params=
+comment4.target=void\ listeAusgeben()
+numComments=5

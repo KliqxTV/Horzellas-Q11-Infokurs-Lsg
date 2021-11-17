@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Knoten
+comment1.params=p\ k
+comment1.target=Knoten(Patient,\ Knoten)
+comment10.params=vergleichswert
+comment10.target=Patient\ suchen(java.lang.String)
+comment11.params=
+comment11.target=void\ informationAusgeben()
+comment12.params=
+comment12.target=int\ restlaengeGeben()
+comment2.params=pNeu
+comment2.target=void\ hintenEinfuegen(Patient)
+comment3.params=pNeu\ pVergleich
+comment3.target=Knoten\ einfuegenVor(Patient,\ Patient)
+comment4.params=pNeu
+comment4.target=Knoten\ sortiertEinfuegen(Patient)
+comment5.params=pVergleich
+comment5.target=Knoten\ knotenEntfernen(Patient)
+comment6.params=
+comment6.target=Patient\ endeGeben()
+comment7.params=
+comment7.target=Knoten\ endeEntfernen()
+comment8.params=
+comment8.target=Patient\ inhaltGeben()
+comment9.params=
+comment9.target=Knoten\ nachfolgerGeben()
+numComments=13

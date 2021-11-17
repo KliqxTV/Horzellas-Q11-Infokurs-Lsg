@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Abschluss
+comment1.params=suchSchluessel
+comment1.target=Datenelement\ suchen(java.lang.String)
+comment2.params=suchSchluessel
+comment2.target=boolean\ istVorhanden(java.lang.String)
+comment3.params=dNeu
+comment3.target=Baumelement\ einfuegen(Datenelement)
+comment4.params=
+comment4.target=Datenelement\ getDaten()
+comment5.params=dNeu
+comment5.target=void\ setDaten(Datenelement)
+comment6.params=
+comment6.target=void\ inOrderAusgabe()
+comment7.params=
+comment7.target=void\ preOrderAusgabe()
+comment8.params=
+comment8.target=void\ postOrderAusgabe()
+numComments=9

@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Graph_3
+comment1.params=
+comment1.target=Graph_3()
+comment10.params=start\ ziel
+comment10.target=void\ zufaelligesNavi(java.lang.String,\ java.lang.String)
+comment11.params=start\ ziel\ errorOutput\ resultOutput
+comment11.target=int[]\ zufaelligesNavi(java.lang.String,\ java.lang.String,\ boolean,\ boolean)
+comment12.params=start\ ziel
+comment12.target=void\ wiederholeZufaelligesNavi(java.lang.String,\ java.lang.String)
+comment2.params=ortsnr
+comment2.target=java.lang.String\ nameZuNummer(int)
+comment3.params=ortsname
+comment3.target=int\ nummerZuName(java.lang.String)
+comment4.params=
+comment4.target=void\ alleOrteAusgeben()
+comment5.params=von\ bis\ km
+comment5.target=void\ kanteSetzen(java.lang.String,\ java.lang.String,\ int)
+comment6.params=
+comment6.target=void\ matrixAusgeben()
+comment7.params=von\ bis
+comment7.target=void\ gibtEsDirekteVerbindung(java.lang.String,\ java.lang.String)
+comment8.params=von
+comment8.target=void\ anzahlDerNachbarn(java.lang.String)
+comment9.params=von
+comment9.target=int\ zufaelligerNachbar(java.lang.String)
+numComments=13

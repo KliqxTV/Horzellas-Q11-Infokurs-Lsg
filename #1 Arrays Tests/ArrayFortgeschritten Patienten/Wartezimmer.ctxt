@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Wartezimmer
+comment1.params=
+comment1.target=Wartezimmer()
+comment10.params=
+comment10.target=void\ altersdurchschnitt()
+comment2.params=neu
+comment2.target=void\ anzahlGeben(boolean)
+comment3.params=
+comment3.target=void\ anzahlPrivatversicherte()
+comment4.params=
+comment4.target=void\ start()
+comment5.params=neu
+comment5.target=void\ ausgabe(boolean)
+comment6.params=nr\ drangekommen
+comment6.target=void\ verlassen(int,\ boolean)
+comment7.params=
+comment7.target=void\ naechsterBitte()
+comment8.params=uename\ uealter\ uekrankenkasse
+comment8.target=void\ notfall(java.lang.String,\ int,\ java.lang.String)
+comment9.params=uename\ uealter\ uekrankenkasse
+comment9.target=void\ neuerPatient(java.lang.String,\ int,\ java.lang.String)
+numComments=11

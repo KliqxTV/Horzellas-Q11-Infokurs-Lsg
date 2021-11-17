@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Gueterwagen
+comment1.params=laenge\ leergewicht\ masse\ art
+comment1.target=Gueterwagen(int,\ int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ ausgabe()
+comment3.params=
+comment3.target=int\ sitzplaetze()
+comment4.params=
+comment4.target=int\ gesamtladung()
+numComments=5

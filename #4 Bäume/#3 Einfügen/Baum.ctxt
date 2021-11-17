@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Baum
+comment1.params=
+comment1.target=Baum()
+comment2.params=id\ name
+comment2.target=void\ einfuegen(int,\ java.lang.String)
+comment3.params=
+comment3.target=void\ inOrderAusgabe()
+numComments=4

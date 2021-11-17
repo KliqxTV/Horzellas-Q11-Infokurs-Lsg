@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Bestellung
+comment1.params=art\ anz\ ein
+comment1.target=Bestellung(java.lang.String,\ int,\ double)
+numComments=2

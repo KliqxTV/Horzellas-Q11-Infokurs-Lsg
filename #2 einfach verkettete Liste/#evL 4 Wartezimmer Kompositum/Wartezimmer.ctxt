@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Wartezimmer
+comment1.params=
+comment1.target=Wartezimmer()
+comment2.params=
+comment2.target=void\ alleEinfuegen()
+comment3.params=
+comment3.target=void\ alleSortiertEinfuegen()
+comment4.params=name\ kraka\ alter
+comment4.target=void\ vorneEinfuegen(java.lang.String,\ java.lang.String,\ int)
+comment5.params=name\ kraka\ alter
+comment5.target=void\ hintenEinfuegen(java.lang.String,\ java.lang.String,\ int)
+comment6.params=name\ kraka\ alter
+comment6.target=void\ sortiertEinfuegen(java.lang.String,\ java.lang.String,\ int)
+comment7.params=name\ kraka\ alter\ nameVergleich
+comment7.target=void\ einfuegenVor(java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment8.params=
+comment8.target=void\ listeAusgeben()
+comment9.params=
+comment9.target=void\ laengeAusgeben()
+numComments=10

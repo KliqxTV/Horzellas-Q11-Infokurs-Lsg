@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Hund
+comment1.params=uename\ uealter\ uegewicht
+comment1.target=Hund(java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=void\ lautgeben()
+comment3.params=
+comment3.target=void\ pflegen()
+comment4.params=
+comment4.target=void\ magfutter()
+comment5.params=
+comment5.target=void\ ausgabe()
+numComments=6

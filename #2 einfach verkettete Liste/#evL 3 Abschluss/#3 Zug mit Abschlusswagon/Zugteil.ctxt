@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Zugteil
+comment1.params=
+comment1.target=void\ ausgabe()
+comment2.params=
+comment2.target=int\ leergewicht()
+comment3.params=
+comment3.target=int\ sitzplaetze()
+comment4.params=
+comment4.target=int\ gesamtladung()
+numComments=5

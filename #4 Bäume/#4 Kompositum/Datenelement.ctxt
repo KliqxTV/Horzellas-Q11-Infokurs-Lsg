@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Datenelement
+comment1.params=
+comment1.target=void\ informationAusgeben()
+comment2.params=dVergleich
+comment2.target=boolean\ istKleinerAls(Datenelement)
+comment3.params=dVergleich
+comment3.target=boolean\ istGroesserAls(Datenelement)
+comment4.params=dVergleich
+comment4.target=boolean\ istGleich(Datenelement)
+comment5.params=sVergleich
+comment5.target=boolean\ schluesselIstKleinerAls(java.lang.String)
+comment6.params=sVergleich
+comment6.target=boolean\ schluesselIstGroesserAls(java.lang.String)
+comment7.params=sVergleich
+comment7.target=boolean\ schluesselIstGleich(java.lang.String)
+numComments=8

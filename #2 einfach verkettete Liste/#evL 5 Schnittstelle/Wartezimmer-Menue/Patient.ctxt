@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Patient
+comment1.params=nameNeu\ krakaNeu\ alterNeu
+comment1.target=Patient(java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ nameGeben()
+comment3.params=
+comment3.target=java.lang.String\ krakaGeben()
+comment4.params=
+comment4.target=int\ alterGeben()
+comment5.params=nameNeu
+comment5.target=void\ nameSetzen(java.lang.String)
+comment6.params=krakaNeu
+comment6.target=void\ krakaSetzen(java.lang.String)
+comment7.params=
+comment7.target=void\ informationAusgeben()
+comment8.params=d
+comment8.target=boolean\ istKleinerAls(Datenelement)
+comment9.params=s
+comment9.target=boolean\ schluesselIstGleich(java.lang.String)
+numComments=10

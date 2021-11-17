@@ -1,0 +1,8 @@
+Ebenen für 1,000,000 Elemente
+*****************************
+
+Das Ergebnis von log(2, 1000000) ist ca 19.9315, also reichen 20 Ebenen um 1,000,000 Elemente zu verwalten:
+2^20 = 1,048,579
+
+log(2, 1000000) ≈ 19.9315
+Pseudoformel wäre also "Ceil(log(2, elemente))"

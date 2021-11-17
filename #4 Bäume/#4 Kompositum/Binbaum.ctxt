@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Binbaum
+comment1.params=
+comment1.target=Binbaum()
+comment2.params=suchSchluessel
+comment2.target=Datenelement\ suchen(java.lang.String)
+comment3.params=suchSchluessel
+comment3.target=boolean\ istVorhanden(java.lang.String)
+comment4.params=dNeu
+comment4.target=void\ einfuegen(Datenelement)
+comment5.params=
+comment5.target=void\ inOrderAusgabe()
+comment6.params=
+comment6.target=void\ preOrderAusgabe()
+comment7.params=
+comment7.target=void\ postOrderAusgabe()
+numComments=8

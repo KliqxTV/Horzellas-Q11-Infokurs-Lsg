@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Mannschaft
+comment1.params=
+comment1.target=Mannschaft()
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ ausgabe()
+comment4.params=nr
+comment4.target=void\ nameZuRueckenummer(int)
+comment5.params=nr\ nameNeu
+comment5.target=void\ umbenennen(int,\ java.lang.String)
+comment6.params=suchName
+comment6.target=void\ gibtsDen(java.lang.String)
+comment7.params=neuName
+comment7.target=void\ hintenAnfuegen(java.lang.String)
+comment8.params=nr
+comment8.target=void\ loeschen(int)
+numComments=9

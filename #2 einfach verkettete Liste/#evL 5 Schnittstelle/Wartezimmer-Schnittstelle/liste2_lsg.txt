@@ -1,0 +1,490 @@
+interface Datenelement{
+  void informationAusgeben();
+  boolean istKleinerAls(Datenelement d);
+  boolean schluesselIstGleich(String s);
+}
+
+
+
+public class Patient  implements Datenelement
+{
+    /** Name des Patienten */
+  // Attribute
+    private String name;
+    
+
+    /**
+    * Konstruktor des Patienten
+    * @param s Name des Patienten
+    */
+    public Patient(String s)
+    {
+        name = s;
+    }
+  // Anfang Methoden
+    public String getName(){
+      return name;
+    }
+
+    public void informationAusgeben(){
+        System.out.print(name +"  ");
+    }
+    
+    public boolean istKleinerAls(Datenelement d){
+        Patient p = (Patient)d;
+        return (this.name.compareTo(p.getName())<0);
+    }
+    
+    public boolean schluesselIstGleich(String s){
+        return name.equals(s);
+    }
+  // Ende Methoden
+}
+
+
+
+
+
+/**
+ * Beschreibung der Liste
+ * 
+ * @author 
+ 
+ */
+public class Liste
+{
+    /** Verwaltung des ersten Knoten in der Liste. */
+    Knoten anfang;
+    
+   
+    
+     /**
+     * Konstruktor der Liste
+     * 
+     */
+    public Liste()
+    {
+        anfang = null;
+            
+    }
+    
+    
+    /**
+     * Sucht ein Datenelement.
+     */
+    public boolean suchen(String vergleichswert){
+        if(anfang==null){
+            return false;
+        }
+        else{
+            return anfang.suchen(vergleichswert);
+        }
+    }
+    
+    /**
+     * Fügt ein neues Objekt am Anfang der Liste ein.
+     */
+    public void vorneEinfuegen(Datenelement dNeu){
+        Knoten kneu;
+        kneu = new Knoten(dNeu, anfang);
+        anfang = kneu;
+    }
+    
+    
+     /**
+     * Fügt ein neues Objekt am Ende der Liste ein.
+     */
+    public void hintenEinfuegen(Datenelement dNeu){
+        if(anfang!=null){
+            anfang.hintenEinfuegen(dNeu);  
+            /*Bemerkung: dies ist keine Rekursion, denn der Aufruf anfang.hintenEinfuegen(dNeu)
+             verwendet die Methode der Klasse Knoten!*/
+        }
+        else{
+            vorneEinfuegen(dNeu);
+        }
+    }
+    
+     /**
+     * Fügt ein neues Objekt zwischen zwei Datenelementen ein.
+     */
+    public void einfuegenVor(Datenelement dNeu, Datenelement dVergleich){
+        if(anfang != null){
+            anfang=anfang.einfuegenVor(dNeu,dVergleich);
+        }
+        else{
+            vorneEinfuegen(dNeu);
+        }
+    }
+    
+    
+    /**
+     * Fügt ein neues Objekt sortiert in die Liste ein.
+     * D.h. es steht vor dem ersten Datenelement in der, das größer 
+     * als das einzufügende Element ist
+     */
+    public void sortiertEinfuegen(Datenelement dNeu){
+        if(anfang != null){
+            anfang=anfang.sortiertEinfuegen(dNeu);
+        }
+        else{
+            vorneEinfuegen(dNeu);
+        }
+    }
+    
+    
+     /**
+     * Entfernt das erste Objekt aus der Liste und gibt es aus.
+     * @return bisheriger erstes Objekt 
+     */
+    public Datenelement anfangEntfernen(){
+        if(anfang != null){
+            Knoten k = anfang;
+            anfang = anfang.getNachfolger();
+            return k.getInhalt();
+        }
+        else return null;
+    }
+    
+    /**
+     * Entfernt das letzte Objekt aus der Liste und gibt es aus.
+     * @return bisheriges letztes Objekt 
+     */
+    public Datenelement endeEntfernen(){
+       if(anfang != null){
+            Datenelement d;
+            d = anfang.getEnde(); 
+            anfang = anfang.endeEntfernen();
+            return d;
+        }
+        else{
+            return null;
+        }
+        
+    }
+    
+    /**
+     * Entfernt ein Datenelement und den zugehörigen Knoten.
+     */
+    public void knotenEntfernen(Datenelement dVergleich){
+        if(anfang != null){
+            anfang = anfang.knotenEntfernen(dVergleich);
+        }
+    }
+
+     
+    /**
+     * Bestimmt die Laenge der Liste
+     */
+    
+    public int laengeGeben(){
+        if (anfang==null){
+            return 0;
+        }
+        else{
+            return anfang.restlaengeGeben();
+        }
+    }
+    /**
+     * Gibt Information die gesamte Liste aus.
+     */
+    
+    
+    void alleInformationenAusgeben(){
+      if(anfang==null){
+          System.out.println("Die Liste ist leer.");
+       }
+       else{
+           Knoten aktuell = anfang;
+            
+            while (aktuell!=null){
+                aktuell.informationAusgeben();
+                aktuell = aktuell.getNachfolger();
+            }
+            System.out.println();
+        }   
+    }
+}
+
+
+
+
+
+
+public class Knoten {
+
+  // Anfang Attribute
+  private Knoten nachfolger;
+  private Datenelement inhalt;
+  // Ende Attribute
+
+  public Knoten(Datenelement d) {
+     inhalt = d;
+     nachfolger = null;
+  }
+  
+  public Knoten(Datenelement d, Knoten k) {
+     inhalt = d;
+     nachfolger = k;
+  }
+
+  // Anfang Methoden
+  public void setNachfolger(Knoten nf){
+    nachfolger = nf;
+  }
+  
+  public Knoten getNachfolger(){
+    return nachfolger;
+  }
+  
+  public Datenelement getInhalt(){
+    return inhalt;
+  }
+  
+  public void informationAusgeben(){
+    getInhalt().informationAusgeben();
+  }
+  
+  /**
+   * Sucht ein bestimmtes Datenelement 
+   */
+  public boolean suchen(String vergleichswert){
+      if(inhalt.schluesselIstGleich(vergleichswert)){
+          return true;
+       }
+       else{
+           if(nachfolger != null){
+               return nachfolger.suchen(vergleichswert);
+            }
+            else return false;
+        }
+   }
+  
+  
+  /**
+   * Einfügen am Ende der Liste
+   */
+  public void hintenEinfuegen(Datenelement dNeu){
+      if(nachfolger!=null){
+          nachfolger.hintenEinfuegen(dNeu);
+      }
+      else{
+          Knoten kneu;
+          kneu = new Knoten(dNeu, null);
+          nachfolger = kneu;
+      }
+      
+  }
+  
+  /**
+   * Einfügen vor einem bestimmten Element
+   */
+  
+  public Knoten einfuegenVor(Datenelement dNeu, Datenelement dVergleich){
+      if(inhalt != dVergleich){
+          if(nachfolger !=null){
+              nachfolger=nachfolger.einfuegenVor(dNeu, dVergleich);
+           }
+           else{
+               hintenEinfuegen(dNeu);
+               
+            }
+           return this;
+        
+        }
+        else{
+          Knoten kNeu;
+          kNeu = new Knoten(dNeu, this);
+          return kNeu;
+        }
+    
+  }
+
+  /**
+   * Sortiertes Einfügen 
+   */
+  public Knoten sortiertEinfuegen(Datenelement dNeu){
+      if(inhalt.istKleinerAls(dNeu)){
+          if(nachfolger !=null){
+              nachfolger=nachfolger.sortiertEinfuegen(dNeu);
+           }
+           else{
+               hintenEinfuegen(dNeu);
+            }
+           return this;
+        
+        }
+        else{
+          Knoten kNeu;
+          kNeu = new Knoten(dNeu, this);
+          return kNeu;
+        }
+  }
+  
+  /**
+   * Gibt den Inhalt des letzten Knotens 
+   */
+  public Datenelement getEnde(){
+      if(nachfolger==null){
+          return inhalt;
+      }
+      else{
+          return nachfolger.getEnde();
+      }
+  }
+  
+  /**
+   * zum Entfernen des letzten Listenelements 
+   */
+  public Knoten endeEntfernen(){
+      if(nachfolger==null){
+          return null;
+       }
+       else{
+           nachfolger=nachfolger.endeEntfernen();
+           return this;
+        }
+  }
+  
+  /**
+   * zum Entfernen eines bestimmten Datenelements 
+   */
+  public Knoten knotenEntfernen(Datenelement dVergleich){
+     if(inhalt == dVergleich){
+         return nachfolger;
+      }
+      else{
+         if (nachfolger != null){
+             nachfolger=nachfolger.knotenEntfernen(dVergleich);
+             return this;
+          }
+          else{
+            return null;
+          }
+        }
+  }
+  
+  
+  /**
+   * Gibt die Anzahl der Knoten hinter dem Knoten
+   * einschließlich des aktuellen Knotens
+   */
+  public int restlaengeGeben(){
+      if (nachfolger==null){
+          return 1;
+      }
+      else {
+          return nachfolger.restlaengeGeben()+1;
+      }
+    }
+  // Ende Methoden
+}
+
+
+
+
+
+/**
+ * Write a description of class Test here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Test {
+  public static void main(){
+      Patient p1 = new Patient("Arber");
+      Patient p2 = new Patient("Berber");
+      Patient p3 = new Patient("Carbon");
+      Patient p4 = new Patient("Dieda");
+      Patient p5 = new Patient("Erbe");
+      Patient p6 = new Patient("Faerber");
+      Patient p7 = new Patient("Garbo");
+      Patient p8 = new Patient("Harper");
+      
+      Liste li = new Liste();
+      
+      li.vorneEinfuegen(p1);
+      li.vorneEinfuegen(p2);
+      li.vorneEinfuegen(p3);
+      li.vorneEinfuegen(p4);
+      
+      System.out.println("Liste mit vier Patienten:");
+      li.alleInformationenAusgeben();
+      System.out.println("Laenge = "+li.laengeGeben());
+      System.out.println("Suche Arber: " + li.suchen("Arber"));
+      System.out.println("Suche Faerber: " + li.suchen("Faerber"));
+      
+      System.out.println();
+      System.out.println("Zwei neue Patienten kommen dazu");
+      li.hintenEinfuegen(p5);
+      li.hintenEinfuegen(p6);
+      li.alleInformationenAusgeben();
+      System.out.println("Laenge = "+li.laengeGeben());
+      System.out.println("Suche Arber: " + li.suchen("Arber"));
+      System.out.println("Suche Faerber: " + li.suchen("Faerber"));
+      
+      System.out.println();
+      System.out.println("Garbo soll vor Erbe");
+      li.einfuegenVor(p7,p5);
+      li.alleInformationenAusgeben();
+      System.out.println("Laenge = "+li.laengeGeben());
+      
+      //Test der Methode sortiertesEinfuegen(dNeu)
+      System.out.println();
+      System.out.println("neue Liste, alphabetisch sortiert:");
+      Liste li2 = new Liste();
+      
+      li2.sortiertEinfuegen(p7);
+      li2.sortiertEinfuegen(p6);
+      li2.sortiertEinfuegen(p5);
+      li2.sortiertEinfuegen(p3);
+      li2.sortiertEinfuegen(p1);
+      li2.sortiertEinfuegen(p2);
+      li2.sortiertEinfuegen(p4);
+     
+
+      li2.alleInformationenAusgeben();
+      
+      //Test Anfang entfernen
+      System.out.println();
+      System.out.print("Entfernt wurde: "); 
+      li2.anfangEntfernen().informationAusgeben();
+      System.out.println();
+      li2.alleInformationenAusgeben();
+      
+      System.out.println();
+      System.out.print("Entfernt wurde: "); 
+      li2.anfangEntfernen().informationAusgeben();
+      System.out.println();
+      li2.alleInformationenAusgeben();
+      
+      //Test Ende entfernen
+      System.out.println();
+      System.out.print("Entfernt wurde: "); 
+      li2.endeEntfernen().informationAusgeben();
+      System.out.println();
+      li2.alleInformationenAusgeben();
+      
+      System.out.println();
+      System.out.print("Entfernt wurde: "); 
+      li2.endeEntfernen().informationAusgeben();
+      System.out.println();
+      li2.alleInformationenAusgeben();
+      
+      //Test bestimmten Knoten entfernen
+      System.out.println();
+      System.out.println("Entfernt werden soll der Knoten p4 Dieda: "); 
+      li2.knotenEntfernen(p4);
+      li2.alleInformationenAusgeben();
+      
+      
+
+    }
+}
+      
+      
+      
+      
+      
+
+

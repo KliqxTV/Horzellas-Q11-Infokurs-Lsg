@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Woerterbucheintrag
+comment1.params=wortNeu\ bedeutungNeu
+comment1.target=Woerterbucheintrag(java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=java.lang.String\ getWort()
+comment11.params=
+comment11.target=java.lang.String\ getBedeutung()
+comment12.params=bedeutungNeu
+comment12.target=void\ setBedeutung(java.lang.String)
+comment2.params=
+comment2.target=void\ informationAusgeben()
+comment3.params=dVergleich
+comment3.target=boolean\ istKleinerAls(Datenelement)
+comment4.params=dVergleich
+comment4.target=boolean\ istGroesserAls(Datenelement)
+comment5.params=dVergleich
+comment5.target=boolean\ istGleich(Datenelement)
+comment6.params=vergleichsSchluessel
+comment6.target=boolean\ schluesselIstGleich(java.lang.String)
+comment7.params=vergleichsSchluessel
+comment7.target=boolean\ schluesselIstGroesserAls(java.lang.String)
+comment8.params=vergleichsSchluessel
+comment8.target=boolean\ schluesselIstKleinerAls(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ SchluesselAlsStringGeben()
+numComments=13

@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Patient
+comment1.params=uename\ uealter\ uekrankenkasse
+comment1.target=Patient(java.lang.String,\ int,\ java.lang.String)
+numComments=2

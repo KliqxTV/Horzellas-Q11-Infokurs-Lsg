@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Mannschaft
+comment1.params=
+comment1.target=Mannschaft()
+comment10.params=nrVon\ nrZu\ output
+comment10.target=void\ rueckennummernTauschen(int,\ int,\ boolean)
+comment11.params=
+comment11.target=void\ sortiereNachGehalt()
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ beispielausgabe()
+comment4.params=
+comment4.target=void\ ausfuehrlicheAusgabe()
+comment5.params=nr
+comment5.target=void\ nameZuRueckenummer(int)
+comment6.params=nr\ nameNeu
+comment6.target=void\ umbenennen(int,\ java.lang.String)
+comment7.params=suchName
+comment7.target=void\ gibtsDen(java.lang.String)
+comment8.params=neuName\ neuAlter\ neuPosition\ neuGehalt\ neuVerein
+comment8.target=void\ hintenAnfuegen(java.lang.String,\ int,\ java.lang.String,\ double,\ java.lang.String)
+comment9.params=nr
+comment9.target=void\ loeschen(int)
+numComments=12

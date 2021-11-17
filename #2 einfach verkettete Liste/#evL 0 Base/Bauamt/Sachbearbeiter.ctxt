@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Sachbearbeiter
+comment1.params=
+comment1.target=Sachbearbeiter()
+comment2.params=
+comment2.target=void\ alleAusgeben()
+comment3.params=
+comment3.target=void\ anzahlHaus()
+comment4.params=
+comment4.target=void\ anzahl()
+comment5.params=suchName
+comment5.target=void\ gibtsDen(java.lang.String)
+comment6.params=bearbeitet
+comment6.target=void\ pop(boolean)
+comment7.params=
+comment7.target=Antrag\ getFirst()
+comment8.params=
+comment8.target=Antrag\ getLast()
+comment9.params=n\ a\ b
+comment9.target=void\ push(java.lang.String,\ java.lang.String,\ int)
+numComments=10

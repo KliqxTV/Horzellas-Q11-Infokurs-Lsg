@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Knoten
+comment1.params=id\ name
+comment1.target=Knoten(int,\ java.lang.String)
+comment2.params=id\ name
+comment2.target=void\ einfuegen(int,\ java.lang.String)
+comment3.params=id
+comment3.target=void\ sucheID(int)
+comment4.params=
+comment4.target=void\ inOrderAusgabe()
+numComments=5
